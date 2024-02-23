@@ -1,4 +1,5 @@
-@import './confing';
+@import 'confing';
+@import 'home';
 
 body{
     background: $primary-color;
@@ -34,6 +35,9 @@ main{
         left: 1rem;
         a{
             padding: 0.4rem;
+            @include transition-ease;
+
+
             &:hover{
                 color: $secondary-color;
             }
@@ -41,7 +45,7 @@ main{
     }    
 }
 
-footer{
+footer {
     font-size: 1rem;
     position: fixed;
     bottom: 0.4rem;
@@ -51,6 +55,3 @@ footer{
     color: #fff;
 }
 
-// nav{
-//     padding-top: 30%;
-// }
